@@ -1,0 +1,96 @@
+/* Apply a pastel gradient background to the whole page */
+/* body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, hsl(225, 69%, 61%), hsl(225, 69%, 61%), hsl(225, 69%, 61%));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+} */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* optional dark overlay */
+    url('OP.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Centered converter card */
+.converter {
+  background-color: rgba(255, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+  width: 350px;
+  text-align: center;
+}
+
+/* Title styling */
+.converter h2 {
+  color: white;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+/* Form inputs and labels */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  color: white;
+  text-align: left;
+  font-size: 14px;
+}
+
+input {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Button styling */
+button {
+  margin-top: 10px;
+  padding: 12px;
+  background-color: #ad0909;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #820000;
+}
+
+/* Output section */
+#output {
+  margin-top: 25px;
+  color: white;
+}
+
+#output h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#result {
+  font-size: 20px;
+  font-weight: bold;
+}
+
