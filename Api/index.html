@@ -4,19 +4,24 @@
   <meta charset="UTF-8">
   <title>Movie Search</title>
   <link rel="stylesheet" href="style.css">
-
+  
 </head>
 <body>
 
-  <h1>Movie Search</h1>
+  <h1>POKEMON SEARCH</h1>
 
-  <form>
-    <label for="movie">Enter a movie name:</label>
-    <input type="text" id="movie" name="movie">
+    <form onsubmit="searchPokemon(event)"> 
+    <label for="Pokemon">Enter a Pokemon name:</label>
+    <input type="text" id="Pok_name" name="Pok_name" placeholder="e.g., Pikachu" required>
     <input type="submit" value="Search">
+    
   </form>
   <br><br>
-  <label>Movie info will appear here...</label>
+  <h3>Pokemon Information:</h3>
+  <p id="output"></p>
+  <img src="" alt="Pokemon Image" id="pokemonImage" 
+  style="display:none; width: 400px; height: 400px; display: block; margin: 0 auto; margin: -100px auto 20px auto;">
 
+  <script src ="Javascript.js"></script>   
 </body>
 </html>
